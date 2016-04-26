@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgtrans">
+
+        <customfonts.MyTextView
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="25dp"
+        android:textColor="#54abee"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        />
+
+        <TextView
+            android:background="@drawable/ozzonlogo"
+            android:id="@+id/ozzon"
+            android:layout_width="132dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            />
+
+
+
+        <customfonts.MyTextView
+            android:id="@+id/acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="16dp"
+            android:textColor="#c4c5c9"
+            android:gravity="center"
+            android:layout_above="@id/signIn"
+            android:paddingBottom="16dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/roundedrect"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="140dp"
+
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp">
+
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/rect1"
+                    />
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bag"
+                    android:paddingLeft="3dp"
+                    android:layout_gravity="center"
+                     />
+
+
+            </FrameLayout>
+
+            <customfonts.MyTextView
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:textSize="22dp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+
+
+
+     </RelativeLayout>
+
+
+
+</FrameLayout>

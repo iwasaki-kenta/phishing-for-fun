@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customfonts.MyTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:letterSpacing="0.02"
+    android:padding="16dp"
+    android:singleLine="true"
+    android:textColor="#73787b"
+    android:textSize="15dp" />

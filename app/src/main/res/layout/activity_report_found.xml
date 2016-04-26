@@ -1,0 +1,277 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/coverPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:maxHeight="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/colorPrimary" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profiletransparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="bottom"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/uploadPhoto"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/camera" />
+
+
+                    <customfonts.MyTextView
+                        android:id="@+id/uploadPhotoText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:letterSpacing="0.02"
+                        android:text="Upload Photo"
+                        android:textColor="#fff"
+
+                        android:textSize="14.5dp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="invisible"
+                app:layout_collapseMode="parallax" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <customfonts.MyTextView
+                    android:id="@+id/gearId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.95"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="ID (not required)"
+                    android:letterSpacing="0.02"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="#7253787b"
+                    android:textColorHint="#7253787b"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/qrButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/border"
+                    android:letterSpacing="0.02"
+                    android:padding="16dp"
+                    android:src="@drawable/qrcode_scan"
+                    android:textColorHint="#73787b"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="20dp"
+                android:background="#c6cbcf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/firstCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"></Spinner>
+
+
+                <Spinner
+                    android:id="@+id/secondCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"></Spinner>
+
+            </LinearLayout>
+
+            <customfonts.MyTextView
+                android:id="@+id/colorPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/border"
+                android:hint="Color"
+                android:letterSpacing="0.02"
+                android:padding="16dp"
+                android:textColorHint="#73787b"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/meshSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"></Spinner>
+
+            <customfonts.MyEditText
+                android:id="@+id/twineWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/border"
+                android:hint="Twine Width (mm)"
+                android:letterSpacing="0.02"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:textColorHint="#73787b"
+                android:textColor="#73787b"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <customfonts.MyTextView
+                    android:id="@+id/location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.95"
+                    android:background="@drawable/border"
+                    android:enabled="false"
+                    android:hint="Location"
+                    android:letterSpacing="0.02"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="#7253787b"
+                    android:textColorHint="#7253787b"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mapsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/border"
+                    android:letterSpacing="0.02"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_place_white_24dp"
+                    android:textColorHint="#73787b"
+                    android:textSize="15dp"
+                    android:tint="@android:color/black" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/wildlife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"></Spinner>
+
+            <customfonts.MyTextView
+                android:id="@+id/reportFoundButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/gradiant"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:padding="18dp"
+                android:text="REPORT FOUND"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:background="#c6cbcf" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

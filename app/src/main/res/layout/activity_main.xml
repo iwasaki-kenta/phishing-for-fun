@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_line">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_action_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorbg"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/nav_header1_height"
+                        android:background="@color/colorbg"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:paddingBottom="35dp">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.025"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="20dp"
+                            android:text="Phish."
+                            android:textColor="@color/colortext"
+                            android:textSize="40dp" />
+
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/colortext"
+                            android:paddingTop="30dp"
+                            android:text="Kenta Iwasaki"
+                            android:visibility="gone"></TextView>
+
+                        <TextView
+                            android:id="@+id/sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.025"
+                            android:padding="@dimen/nav_header_vertical_spacing"
+                            android:text="SIGN OUT"
+                            android:textColor="@color/colortext" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/myItems"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.025"
+                            android:paddingBottom="12dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="12dp"
+                            android:text="MY ITEMS"
+                            android:textColor="@color/colortext" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="90dp">
+
+                            <TextView
+                                android:id="@+id/circle_count"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="2dp"
+                                android:text="2"
+                                android:textColor="@color/colortext"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/addItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.025"
+                        android:padding="@dimen/nav_header_vertical_spacing"
+                        android:text="ADD AN ITEM"
+                        android:textColor="@color/colortext" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#c6cbcf" />
+
+                    <TextView
+                        android:id="@+id/report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.025"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="12dp"
+                        android:text="REPORT ITEMS"
+                        android:textColor="@color/colortext" />
+                    <TextView
+                        android:id="@+id/lostItems"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.025"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="12dp"
+                        android:text="LOST ITEMS"
+                        android:textColor="@color/colortext" />
+
+                    <TextView
+                        android:id="@+id/explore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.025"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="12dp"
+                        android:text="FOUND ITEMS"
+                        android:textColor="@color/colortext" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

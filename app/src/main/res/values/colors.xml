@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#444a59</color>
+    <color name="colorPrimaryDark">#444a59</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colortext">#444a59</color>
+    <color name="colorbg">#ffffff</color>
+    <color name="btcolorbg">#C5C7CC</color>
+    <color name="background_line">#444a59</color>
+    <color name="colorHead">#363147</color>
+    <color name="colorPara">#8b8a8d</color>
+    <color name="colorShake">#78909c</color>
+
+    <integer-array name="net_colors">
+        <item>@android:color/holo_blue_dark</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_orange_light</item>
+        <item>@android:color/holo_red_dark</item>
+        <item>@color/colorAccent</item>
+        <item>@android:color/holo_purple</item>
+        <item>@color/common_google_signin_btn_text_light_default</item>
+        <item>@color/colorPara</item>
+        <item>@color/btcolorbg</item>
+        <item>@android:color/black</item>
+    </integer-array>
+
+
+</resources>

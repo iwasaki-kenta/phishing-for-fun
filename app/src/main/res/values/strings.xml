@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Phishing for Good</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="text_size">16dp</string>
+
+    <string-array name="gear_types">
+        <item>Nets</item>
+        <item>Traps</item>
+        <item>Hooks and Lines</item>
+        <item>Grappling and Wounding</item>
+    </string-array>
+
+    <string-array name="net_types">
+        <item>Seine nets</item>
+        <item>Trawls</item>
+        <item>Dredges</item>
+        <item>Gill nets and entangling nets</item>
+    </string-array>
+
+    <string-array name="trap_types">
+        <item>Aerial traps</item>
+        <item>Barriers, fences, weirs, etc.</item>
+        <item>Fyke nets</item>
+        <item>Norwegian two-chamber trap</item>
+        <item>Pots</item>
+        <item>Stationary uncovered pound nets</item>
+        <item>Stow nets</item>
+    </string-array>
+
+    <string-array name="hook_types">
+        <item>Bottom longlines</item>
+        <item>Buoy gear</item>
+        <item>Drifting longlines</item>
+        <item>Greenstick gear</item>
+        <item>Handlines and pole-lines (hand operated)</item>
+        <item>Handlines and pole-lines (mechanized)</item>
+        <item>Handlines hand operated</item>
+        <item>Handlines mechanized</item>
+        <item>Hooks and lines (not specified)</item>
+        <item>Jigging lines</item>
+        <item>Longlines (not specified)</item>
+        <item>Pole-lines hand operated</item>
+        <item>Pole-lines mechanized</item>
+        <item>Set longlines</item>
+        <item>Trolling lines</item>
+        <item>Vertical Lines</item>
+    </string-array>
+
+    <string-array name="grappling_types">
+        <item>Harpoons</item>
+    </string-array>
+
+    <string-array name="mesh_sizes">
+        <item>Less than 1 finger</item>
+        <item>1 finger</item>
+        <item>2 finger</item>
+        <item>3 finger</item>
+        <item>4 finger</item>
+        <item>Fist</item>
+        <item>Open hand</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="wildlife">
+        <item>Wildlife</item>
+        <item>Live</item>
+        <item>Complete Carcass</item>
+        <item>Remains</item>
+    </string-array>
+
+
+</resources>
